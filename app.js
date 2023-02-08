@@ -43,7 +43,7 @@ async function handleEvent(event) {
   }
 
   const completion = await openai.createCompletion({
-    model: "text-chat-davinci-002-20221122",
+    model: "text-davinci-003",
     prompt: event.message.text ,
     max_tokens: 1000,
   });
